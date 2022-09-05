@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<title>Dear Frosh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+<link rel="shortcut icon" href="./favicon.ico" type="shortcut icon" />
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #2E0740;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: #F2CE16;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #2E0740;
+        color: white;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    .topnav i {
+        padding-right: 8px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+    .container-fluid {
+        padding-top: 48px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 33%;
+        /* IE10 */
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .intro-content {
+        padding-bottom: 48px;
+    }
+
+    .letter-prev-photos {
+        padding-bottom: 48px;
+    }
+
+    .letter-prev-text .letter-title,
+    .letter-author {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .letter-prev-text {
+        padding: 8px 0px 32px 0px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 13%;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+
+        footer {
+            padding-top: 36%;
+        }
+    }
+
+    .album-icon {
+    max-height: 24px;
+    vertical-align: middle;
+    padding-right: 8px;
+    }
+    
+    .letter-link:hover img {
+        -webkit-filter: brightness(50%);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    }
+</style>
+
+<head>
+    <!-- Google tag (gtag.js) for dearfrosh-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6JHN3WBRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z6JHN3WBRL');
+    </script>
+    <meta name="title" property="og:title" content="Dear Frosh" />
+    <meta property="og:url" content="http://dearfrosh.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://dearfrosh.com/assets/dearfrosh_linkpreview.png" />
+    <meta property="og:image:alt" content="Illustration of a laptop with a coding editor launched on the screen" />
+    <meta property="og:image:secure_url" content="https://dearfrosh.com/assets/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="description" property="og:description" content="Dear Frosh is a series of letters collected from University of Toronto Engineering students addressed to their first year selves.
+    It is created by the 1% Inspiration Podcast." />
+    <meta property="og:site_name" content="Dear Frosh" />
+
+    <meta name="author" property="og:author" content="1% Inspiration" />
+
+    <meta property="twitter:title" content="Dear Frosh" />
+    <meta property="twitter:image" content="http://dearfrosh.com/assets/dearfrosh_linkpreview.png" />
+    <meta property="twitter:description" content="Dear Frosh is a series of letters collected from University of Toronto Engineering students addressed to their first year selves.
+    It is created by the 1% Inspiration Podcast." />
+
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <header class="desktop-nav">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active"><img class="album-icon" src="./assets/Album-cover-gradient.svg">Dear Frosh 2022</a>
+            <a href="https://docs.google.com/document/d/1O_RVFwCMtmleE3tyijYaflbD7iXKarT5lQ0q8ivtNC8/edit"
+                target="_blank"><i class="fa fa-external-link nav-icon"></i>U of T Resources</a>
+            <a href="https://1-inspiration.com/" target="_blank"><i class="fa fa-headphones nav-icon"></i>Listen to 1%
+                Inspiration</a>
+            <a href="https://1-inspiration.com/episodes/dear-frosh" target="_blank"><i
+                    class="fa fa-graduation-cap nav-icon"></i>Write a Letter</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" style="padding-right: 0px;"></i>
+            </a>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-10">
+                <div class="intro-content">
+                    <h5>Dear 2T6,</h5>
+                    <h1>Welcome to University of Toronto Engineering!</h1>
+                    <h1>We’re so glad to have you here.</h1>
+                    <h5>Dear Frosh is a series of letters collected from U of T Engineering students addressed to their
+                        first year selves.</h5>
+                    <h5>This initiative is created and facilitated by the <a href="https://1-inspiration.com/"
+                            target="_blank">1% Inspiration Podcast</a>, a U of T engineering based podcast
+                        about making the most of an engineering (and undergraduate) education. It is inspired by the
+                        original
+                        <a href="https://dearpennfresh.com/" target="_blank">"Dear Penn Freshmen"</a> launched at the
+                        University of Pennsylvania in 2015 by Lauren McCann.
+                    </h5>
+                </div>
+
+                <div class="row letter-prev-photos">
+                    <div class="column">
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Ali_Seifeldin.png"
+                                alt="Photo of Ali painted in purple during Frosh Week"></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Dear Froshies</h5>
+                                <p class="letter-author"><em>Ali Seifeldin, Engsci 2T1 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link" href="./letters/jennifer.html"><img src="./letter_photos/Jennifer_Wang.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">For the next time the world turns grey on you</h5>
+                                <p class="letter-author"><em>Jennifer Wang, ChemE 2T1 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Dana.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Hey, this is Dana.</h5>
+                                <p class="letter-author"><em>Dana, ECE 2T0 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Sabrina_Cupryk.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Being Okay is Pretty Great</h5>
+                                <p class="letter-author"><em>Sabrina, ChemE 2T1 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Anonymous_CivE.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Closet of Dreams</h5>
+                                <p class="letter-author"><em>Anonymous</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Hanna_Zhang.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Relentless Pursuit</h5>
+                                <p class="letter-author"><em>Hanna J. Zhang, EngSci ROBO 2T0 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/David_Boroto.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Good luck and take care. You're about to start an adventure!
+                                </h5>
+                                <p class="letter-author"><em>David Boroto, EngSci 1T8 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Matthew_Van_Oirschot.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Enjoy the Ride</h5>
+                                <p class="letter-author"><em>Matthew Van Oirschot, EngSci 2T1 + PEY</em></p>
+                            </div>
+                        </div>
+
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/The Journey or the Destination.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">The Journey or the Destination?</h5>
+                                <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Yilin_Huang.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">To the class of 2T6</h5>
+                                <p class="letter-author"><em>Yilin Huang, MSE 2T0 + PEY</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Cece_Rozario.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Advice From Your Friendly Coffee Addict</h5>
+                                <p class="letter-author"><em>Cece, Indy 2T1+1 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Nora_Al.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Guess What, You DIDN’T Peak in High School</h5>
+                                <p class="letter-author"><em>Nora, ChemE 2T1</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Kaija.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Challenge Yourself to Have Fun</h5>
+                                <p class="letter-author"><em>Kaija, EngSci 2T5</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Anonymous_Indy.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">Feeling A Lot: Engineers Have Big Hearts</h5>
+                                <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
+                            </div>
+                        </div>
+                        <div id="container-letter-photo">
+                            <a class="letter-link"><img src="./letter_photos/Akhirun Nahar Meem.png" alt=""></a>
+                            <div class="letter-prev-text">
+                                <h5 class="letter-title">I know you might be scared, but it's all good!</h5>
+                                <p class="letter-author"><em>Akhirun Nahar Meem, ChemE 2T5 + PEY</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p><a href="https://1-inspiration.com/episodes/dear-frosh" target="_blank">Submit a Letter!</a></p>
+                    <h2>Acknowledgements</h2>
+                    <p>Thank you to these community members for their time, trust and feedback during this project:</p>
+                    <ul>
+                        <li>TODO</li>
+                        <li>TODO</li>
+                        <li>TODO</li>
+                      </ul> 
+                </div>
+                <footer>
+                    <hr>
+                    <p>Made with 💜 by Jennifer & Maeesha at <a target="_blank" href="https://1-inspiration.com/">1%
+                            Inspiration</a></p>
+                </footer>
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</html>
