@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +50,7 @@
         padding-right: 8px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav a:not(:first-child) {
             display: none;
         }
@@ -60,7 +61,7 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav.responsive {
             position: relative;
         }
@@ -115,28 +116,19 @@
         padding-bottom: 48px;
     }
 
-    .letter-prev-text ,
+    .letter-prev-text,
     .letter-author {
         margin-bottom: 0px;
         text-align: center;
     }
 
-    .letter-title{
+    .letter-title {
         margin-bottom: 4px;
     }
 
     .letter-prev-text {
         padding: 8px 0px 32px 0px;
     }
-
-    footer p {
-        text-align: center;
-    }
-
-    footer {
-        padding-top: 48px;
-    }
-
 
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
@@ -190,15 +182,6 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
-
-    .btn-submit-letter {
-        background: #2E0740;
-        padding: 16px;
-        text-align: center;
-        border-radius: 8px;
-        color: white;
-        margin-bottom: 48px;
-    }
 </style>
 
 <head>
@@ -238,7 +221,8 @@
     <!-- Navbar (sit on top) -->
     <header class="desktop-nav">
         <div class="topnav" id="myTopnav">
-            <a href="../index.html" class="active"><img class="album-icon" src="./assets/Album-cover-gradient.svg">Dear Frosh
+            <a href="../index.html" class="active"><img class="album-icon" src="./assets/Album-cover-gradient.svg">Dear
+                Frosh
                 2022</a>
             <a href="https://docs.google.com/document/d/1O_RVFwCMtmleE3tyijYaflbD7iXKarT5lQ0q8ivtNC8/edit"
                 target="_blank"><i class="fa fa-external-link nav-icon"></i>U of T Resources</a>
@@ -251,7 +235,9 @@
             </a>
         </div>
     </header>
-    <div class="container-fluid">
+       <div class="container-fluid">
+        <a id="top-button"></a>
+
         <div class="row">
             <div class="col"></div>
             <div class="col-md-10">
@@ -273,7 +259,8 @@
                 <div class="row letter-prev-photos">
                     <div class="column">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="ali.html"><img class="letter-img" src="./letter_photos/Ali_Seifeldin.png"
+                            <a class="letter-link" href="ali.html"><img class="letter-img"
+                                    src="./letter_photos/Ali_Seifeldin.png"
                                     alt="Photo of Ali painted in purple during Frosh Week"></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Dear Froshies</h5>
@@ -281,8 +268,8 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="jennifer.html"><img
-                                    src="./letter_photos/Jennifer_Wang.png" alt=""></a>
+                            <a class="letter-link" href="jennifer.html"><img src="./letter_photos/Jennifer_Wang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">For the next time the world turns grey on you</h5>
                                 <p class="letter-author"><em>Jennifer Wang, ChemE 2T1 + PEY</em></p>
@@ -296,14 +283,16 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="sabrina.html"><img src="./letter_photos/Sabrina_Cupryk.png" alt=""></a>
+                            <a class="letter-link" href="sabrina.html"><img src="./letter_photos/Sabrina_Cupryk.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Being Okay is Pretty Great</h5>
                                 <p class="letter-author"><em>Sabrina, ChemE 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-civ.html"><img src="./letter_photos/Anonymous_CivE.png" alt=""></a>
+                            <a class="letter-link" href="anon-civ.html"><img src="./letter_photos/Anonymous_CivE.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Closet of Dreams</h5>
                                 <p class="letter-author"><em>Anonymous</em></p>
@@ -312,14 +301,16 @@
                     </div>
                     <div class="column">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="hanna.html"><img src="./letter_photos/Hanna_Zhang.png" alt=""></a>
+                            <a class="letter-link" href="hanna.html"><img src="./letter_photos/Hanna_Zhang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Relentless Pursuit</h5>
                                 <p class="letter-author"><em>Hanna J. Zhang, EngSci ROBO 2T0 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="david.html"><img src="./letter_photos/David_Boroto.png" alt=""></a>
+                            <a class="letter-link" href="david.html"><img src="./letter_photos/David_Boroto.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Good luck and take care. You're about to start an adventure!
                                 </h5>
@@ -327,7 +318,8 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="matthew.html"><img src="./letter_photos/Matthew_Van_Oirschot.png" alt=""></a>
+                            <a class="letter-link" href="matthew.html"><img
+                                    src="./letter_photos/Matthew_Van_Oirschot.png" alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Enjoy the Ride</h5>
                                 <p class="letter-author"><em>Matthew Van Oirschot, EngSci 2T1 + PEY</em></p>
@@ -335,15 +327,16 @@
                         </div>
 
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-indy1.html"><img src="./letter_photos/The Journey or the Destination.png"
-                                    alt=""></a>
+                            <a class="letter-link" href="anon-indy1.html"><img
+                                    src="./letter_photos/The Journey or the Destination.png" alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">The Journey or the Destination?</h5>
                                 <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="yilin.html"><img src="./letter_photos/Yilin_Huang.png" alt=""></a>
+                            <a class="letter-link" href="yilin.html"><img src="./letter_photos/Yilin_Huang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">To the class of 2T6</h5>
                                 <p class="letter-author"><em>Yilin Huang, MSE 2T0 + PEY</em></p>
@@ -352,7 +345,8 @@
                     </div>
                     <div class="column">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="cecilia.html"><img src="./letter_photos/Cece_Rozario.png" alt=""></a>
+                            <a class="letter-link" href="cecilia.html"><img src="./letter_photos/Cece_Rozario.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Advice From Your Friendly Coffee Addict</h5>
                                 <p class="letter-author"><em>Cece, Indy 2T1+1 + PEY</em></p>
@@ -373,14 +367,16 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-indy2.html"><img src="./letter_photos/Anonymous_Indy.png" alt=""></a>
+                            <a class="letter-link" href="anon-indy2.html"><img src="./letter_photos/Anonymous_Indy.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Feeling A Lot: Engineers Have Big Hearts</h5>
                                 <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="akhirun.html"><img src="./letter_photos/Akhirun Nahar Meem.png" alt=""></a>
+                            <a class="letter-link" href="akhirun.html"><img src="./letter_photos/Akhirun Nahar Meem.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">I know you might be scared, but it's all good!</h5>
                                 <p class="letter-author"><em>Akhirun Nahar Meem, ChemE 2T5 + PEY</em></p>
@@ -390,14 +386,25 @@
                 </div>
                 <div>
                     <div>
-                        <a href="https://1-inspiration.com/episodes/dear-frosh"
-                                target="_blank"><p class="btn-submit-letter">Submit a Letter!</p></a>
+                        <a href="https://1-inspiration.com/episodes/dear-frosh" target="_blank">
+                            <p class="btn-submit-letter">Submit a Letter!</p>
+                        </a>
                     </div>
                 </div>
                 <footer>
                     <hr>
                     <p>Made with 💜 by Jennifer & Maeesha from <a target="_blank" href="https://1-inspiration.com/">1%
                             Inspiration</a></p>
+                    <div class="footer-icon">
+                        <a href="https://1-inspiration.com/" target="_blank"><i class="fa fa-globe"></i></a>
+                        <a target="_blank" href="mailto:whatisyour1percent@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/1percentinspiration.mp3/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/1percentinspiration"><i
+                                class="fa fa-facebook-official"></i></a>
+                        <a target="_blank" href="https://open.spotify.com/show/1AeeaLLF69SL3zSaGS0pnj"><i
+                                class="fa fa-spotify"></i></a>
+                    </div>
                 </footer>
             </div>
             <div class="col"></div>
@@ -405,15 +412,10 @@
         </div>
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
 
@@ -427,6 +429,21 @@
             x.className = "topnav";
         }
     }
+
+    var btn = $('#top-button');
+
+    $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
 </script>
 
 </html>

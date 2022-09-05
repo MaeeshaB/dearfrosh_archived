@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +50,7 @@
         padding-right: 8px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav a:not(:first-child) {
             display: none;
         }
@@ -69,7 +70,7 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav.responsive {
             position: relative;
         }
@@ -172,7 +173,7 @@
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .column {
             -ms-flex: 100%;
             flex: 100%;
@@ -228,14 +229,6 @@
         text-transform: uppercase;
     }
 
-
-    .btn-submit-letter {
-        background: #2E0740;
-        padding: 16px;
-        text-align: center;
-        border-radius: 8px;
-        color: white;
-    }
 
     .pad-top {
         padding-top: 48px;
@@ -293,7 +286,8 @@
             </a>
         </div>
     </header>
-    <div class="container-fluid">
+       <div class="container-fluid">
+        <a id="top-button"></a>
         <div class="row">
             <div class="col"></div>
             <div class="col-md-10">
@@ -310,16 +304,36 @@
                         <p>Dear Frosh,</p>
                         <p>
 
-                            Of course – I’m writing this letter on the last possible day it needs to be submitted by. Guess old habits die hard, don’t they? Even after graduating, the concept of time management appears obsolete, but I digress. 
-                            <br><br>It seemed like forever ago that I sat in Convocation Hall for my matriculation, confident that the knowledge I gathered from the past four years of high school would help me thrive in these next five years ahead. But I was in for a huge wakeup call. Between balancing my courses, clubs, and commuting, my grades plummeted dramatically. Here I was, taking prescribed courses that I had absolutely no interest in because I thought they were irrelevant to my program, while my classmates seemed to make the adjustment just fine. It made me wonder whether I truly belonged. But miraculously, first year soon turned to second year, and second year turned into third year. While I did not realize it at the time, these first three years of undergrad taught me a very valuable lesson that I use to this day: you can only control what you can control. As cliché as this may sound, leveraging the advice from upper years or past graduates like myself can only help you get so far. It is ultimately up to you to be confident in your own abilities and judgement as you navigate through the academic challenges of undergrad because everyone’s experience is different. 
-                            <br><br>Fast forward to the present, where it has been a couple months since I sat in Convocation Hall for my convocation. To my friends and family, receiving the diploma is a huge milestone that’s worthy of celebration. But to me, it doesn’t mean much. What matters more were these types of lessons that shaped how I got to this point. Remember, future employers are not hiring you for being able to successfully calculate integrals or solve systems of equations. Rather, they value you for how you can continue to grow beyond your role as a team player, as a problem-solver, and as an innovator.
+                            Of course – I’m writing this letter on the last possible day it needs to be submitted by.
+                            Guess old habits die hard, don’t they? Even after graduating, the concept of time management
+                            appears obsolete, but I digress.
+                            <br><br>It seemed like forever ago that I sat in Convocation Hall for my matriculation,
+                            confident that the knowledge I gathered from the past four years of high school would help
+                            me thrive in these next five years ahead. But I was in for a huge wakeup call. Between
+                            balancing my courses, clubs, and commuting, my grades plummeted dramatically. Here I was,
+                            taking prescribed courses that I had absolutely no interest in because I thought they were
+                            irrelevant to my program, while my classmates seemed to make the adjustment just fine. It
+                            made me wonder whether I truly belonged. But miraculously, first year soon turned to second
+                            year, and second year turned into third year. While I did not realize it at the time, these
+                            first three years of undergrad taught me a very valuable lesson that I use to this day: you
+                            can only control what you can control. As cliché as this may sound, leveraging the advice
+                            from upper years or past graduates like myself can only help you get so far. It is
+                            ultimately up to you to be confident in your own abilities and judgement as you navigate
+                            through the academic challenges of undergrad because everyone’s experience is different.
+                            <br><br>Fast forward to the present, where it has been a couple months since I sat in
+                            Convocation Hall for my convocation. To my friends and family, receiving the diploma is a
+                            huge milestone that’s worthy of celebration. But to me, it doesn’t mean much. What matters
+                            more were these types of lessons that shaped how I got to this point. Remember, future
+                            employers are not hiring you for being able to successfully calculate integrals or solve
+                            systems of equations. Rather, they value you for how you can continue to grow beyond your
+                            role as a team player, as a problem-solver, and as an innovator.
                         <p>
                             Signed,
                         </p>
 
                         <p>Anonymous <br>
                             Indy 2T1 + PEY
-                            
+
 
                         </p>
                     </div>
@@ -468,6 +482,16 @@
                     <hr>
                     <p>Made with 💜 by Jennifer & Maeesha from <a target="_blank" href="https://1-inspiration.com/">1%
                             Inspiration</a></p>
+                    <div class="footer-icon">
+                        <a href="https://1-inspiration.com/" target="_blank"><i class="fa fa-globe"></i></a>
+                        <a target="_blank" href="mailto:whatisyour1percent@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/1percentinspiration.mp3/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/1percentinspiration"><i
+                                class="fa fa-facebook-official"></i></a>
+                        <a target="_blank" href="https://open.spotify.com/show/1AeeaLLF69SL3zSaGS0pnj"><i
+                                class="fa fa-spotify"></i></a>
+                    </div>
                 </footer>
             </div>
             <div class="col"></div>
@@ -476,9 +500,7 @@
     </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -496,7 +518,20 @@
         } else {
             x.className = "topnav";
         }
-    }
+    } var btn = $('#top-button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 </script>
 
 </html>

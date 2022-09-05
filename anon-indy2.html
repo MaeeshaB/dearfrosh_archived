@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +50,7 @@
         padding-right: 8px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav a:not(:first-child) {
             display: none;
         }
@@ -69,7 +70,7 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav.responsive {
             position: relative;
         }
@@ -172,7 +173,7 @@
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .column {
             -ms-flex: 100%;
             flex: 100%;
@@ -182,14 +183,15 @@
         footer {
             padding-top: 36%;
         }
+
         .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-        object-fit: cover;
-        height: 300px;
-        transition: 0.5s;
-    }
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+            transition: 0.5s;
+        }
     }
 
     .album-icon {
@@ -227,16 +229,7 @@
         text-transform: uppercase;
     }
 
-
-    .btn-submit-letter {
-        background: #2E0740;
-        padding: 16px;
-        text-align: center;
-        border-radius: 8px;
-        color: white;
-    }
-
-    .pad-top{
+    .pad-top {
         padding-top: 48px;
     }
 </style>
@@ -292,7 +285,8 @@
             </a>
         </div>
     </header>
-    <div class="container-fluid">
+       <div class="container-fluid">
+        <a id="top-button"></a>
         <div class="row">
             <div class="col"></div>
             <div class="col-md-10">
@@ -302,7 +296,7 @@
                         <h2 class="transform-upper">Feeling A Lot: Engineers Have Big Hearts
                         </h2>
                         <h5><strong><small class="text-muted"><em>
-                            Anonymous, Indy 2T1 + PEY
+                                        Anonymous, Indy 2T1 + PEY
 
 
                                     </em></small></strong></h5>
@@ -310,18 +304,37 @@
                         <p>Hello!</p>
                         <p>
 
-                            Congratulations! You’ll hear that a lot over the next few weeks but you really do deserve it - now during frosh week but also for each and every day after this. You’ve had such remarkable experiences leading to your start at UofT and that won’t stop after Frosh week. 
-                            <br><br>First year can be a lot in lots of ways! A lot can be concentrated into a short period of time, or a lot can be scattered across weeks, months and semesters. Having recently completed my time at UofT Engineering, I wanted to formalize a few thoughts that you may choose to keep close to your heart during this time. 
-                            <br><br>Regardless of how you’ll experience your first year here, guard your precious time! Put it towards things that can bring you bits of peace and joy to your day. This could be anything, it can change and transform but you’re in control. Ensuring you have time to recharge is incredibly important to prioritize as you challenge yourself, grow and learn throughout first year. You won’t have to learn this alone. In the spaces that renew and recharge you, you’ll meet so many new individuals who are looking for the same. You’ll connect with others in your own unique way that enables you to learn more about yourself and those in your community. 
-                            <br><br>I know you know this, but you’re going to learn a lot here, and that learning won’t stop when you graduate. This learning will be saturated with rich technical knowledge but also extend to nurturing emotional intelligence and a caring heart. This stuff is just as important as the technical and professional expertise you’re going to build. Your heart, your experiences, your emotions and your personality are crucial components to cohesively bonding the knowledge you’ll gain from this program and will form you into an incredible Engineer! 
-                            <br><br>You are a beautifully complex and incredibly important person. We are so lucky to have you here.
+                            Congratulations! You’ll hear that a lot over the next few weeks but you really do deserve it
+                            - now during frosh week but also for each and every day after this. You’ve had such
+                            remarkable experiences leading to your start at UofT and that won’t stop after Frosh week.
+                            <br><br>First year can be a lot in lots of ways! A lot can be concentrated into a short
+                            period of time, or a lot can be scattered across weeks, months and semesters. Having
+                            recently completed my time at UofT Engineering, I wanted to formalize a few thoughts that
+                            you may choose to keep close to your heart during this time.
+                            <br><br>Regardless of how you’ll experience your first year here, guard your precious time!
+                            Put it towards things that can bring you bits of peace and joy to your day. This could be
+                            anything, it can change and transform but you’re in control. Ensuring you have time to
+                            recharge is incredibly important to prioritize as you challenge yourself, grow and learn
+                            throughout first year. You won’t have to learn this alone. In the spaces that renew and
+                            recharge you, you’ll meet so many new individuals who are looking for the same. You’ll
+                            connect with others in your own unique way that enables you to learn more about yourself and
+                            those in your community.
+                            <br><br>I know you know this, but you’re going to learn a lot here, and that learning won’t
+                            stop when you graduate. This learning will be saturated with rich technical knowledge but
+                            also extend to nurturing emotional intelligence and a caring heart. This stuff is just as
+                            important as the technical and professional expertise you’re going to build. Your heart,
+                            your experiences, your emotions and your personality are crucial components to cohesively
+                            bonding the knowledge you’ll gain from this program and will form you into an incredible
+                            Engineer!
+                            <br><br>You are a beautifully complex and incredibly important person. We are so lucky to
+                            have you here.
                         <p>
                             With love & a warm heart,
                         </p>
 
                         <p>Anonymous <br>
                             Indy 2T1 + PEY
-                            
+
                         </p>
                     </div>
                     <div class="column letter-image">
@@ -335,7 +348,8 @@
                 <div class="row-read-more letter-prev-photos">
                     <div class="column-3">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="ali.html"><img class="letter-img" src="./letter_photos/Ali_Seifeldin.png"
+                            <a class="letter-link" href="ali.html"><img class="letter-img"
+                                    src="./letter_photos/Ali_Seifeldin.png"
                                     alt="Photo of Ali painted in purple during Frosh Week"></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Dear Froshies</h5>
@@ -343,8 +357,8 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="jennifer.html"><img
-                                    src="./letter_photos/Jennifer_Wang.png" alt=""></a>
+                            <a class="letter-link" href="jennifer.html"><img src="./letter_photos/Jennifer_Wang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">For the next time the world turns grey on you</h5>
                                 <p class="letter-author"><em>Jennifer Wang, ChemE 2T1 + PEY</em></p>
@@ -358,14 +372,16 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="sabrina.html"><img src="./letter_photos/Sabrina_Cupryk.png" alt=""></a>
+                            <a class="letter-link" href="sabrina.html"><img src="./letter_photos/Sabrina_Cupryk.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Being Okay is Pretty Great</h5>
                                 <p class="letter-author"><em>Sabrina, ChemE 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-civ.html"><img src="./letter_photos/Anonymous_CivE.png" alt=""></a>
+                            <a class="letter-link" href="anon-civ.html"><img src="./letter_photos/Anonymous_CivE.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Closet of Dreams</h5>
                                 <p class="letter-author"><em>Anonymous</em></p>
@@ -374,14 +390,16 @@
                     </div>
                     <div class="column-3">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="hanna.html"><img src="./letter_photos/Hanna_Zhang.png" alt=""></a>
+                            <a class="letter-link" href="hanna.html"><img src="./letter_photos/Hanna_Zhang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Relentless Pursuit</h5>
                                 <p class="letter-author"><em>Hanna J. Zhang, EngSci ROBO 2T0 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="david.html"><img src="./letter_photos/David_Boroto.png" alt=""></a>
+                            <a class="letter-link" href="david.html"><img src="./letter_photos/David_Boroto.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Good luck and take care. You're about to start an adventure!
                                 </h5>
@@ -389,7 +407,8 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="matthew.html"><img src="./letter_photos/Matthew_Van_Oirschot.png" alt=""></a>
+                            <a class="letter-link" href="matthew.html"><img
+                                    src="./letter_photos/Matthew_Van_Oirschot.png" alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Enjoy the Ride</h5>
                                 <p class="letter-author"><em>Matthew Van Oirschot, EngSci 2T1 + PEY</em></p>
@@ -397,15 +416,16 @@
                         </div>
 
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-indy1.html"><img src="./letter_photos/The Journey or the Destination.png"
-                                    alt=""></a>
+                            <a class="letter-link" href="anon-indy1.html"><img
+                                    src="./letter_photos/The Journey or the Destination.png" alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">The Journey or the Destination?</h5>
                                 <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="yilin.html"><img src="./letter_photos/Yilin_Huang.png" alt=""></a>
+                            <a class="letter-link" href="yilin.html"><img src="./letter_photos/Yilin_Huang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">To the class of 2T6</h5>
                                 <p class="letter-author"><em>Yilin Huang, MSE 2T0 + PEY</em></p>
@@ -414,7 +434,8 @@
                     </div>
                     <div class="column-3">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="cecilia.html"><img src="./letter_photos/Cece_Rozario.png" alt=""></a>
+                            <a class="letter-link" href="cecilia.html"><img src="./letter_photos/Cece_Rozario.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Advice From Your Friendly Coffee Addict</h5>
                                 <p class="letter-author"><em>Cece, Indy 2T1+1 + PEY</em></p>
@@ -435,14 +456,16 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-indy2.html"><img src="./letter_photos/Anonymous_Indy.png" alt=""></a>
+                            <a class="letter-link" href="anon-indy2.html"><img src="./letter_photos/Anonymous_Indy.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Feeling A Lot: Engineers Have Big Hearts</h5>
                                 <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="akhirun.html"><img src="./letter_photos/Akhirun Nahar Meem.png" alt=""></a>
+                            <a class="letter-link" href="akhirun.html"><img src="./letter_photos/Akhirun Nahar Meem.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">I know you might be scared, but it's all good!</h5>
                                 <p class="letter-author"><em>Akhirun Nahar Meem, ChemE 2T5 + PEY</em></p>
@@ -451,13 +474,24 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://1-inspiration.com/episodes/dear-frosh"
-                            target="_blank"><p class="btn-submit-letter">Submit a Letter!</p></a>
+                    <a href="https://1-inspiration.com/episodes/dear-frosh" target="_blank">
+                        <p class="btn-submit-letter">Submit a Letter!</p>
+                    </a>
                 </div>
                 <footer>
                     <hr>
                     <p>Made with 💜 by Jennifer & Maeesha from <a target="_blank" href="https://1-inspiration.com/">1%
                             Inspiration</a></p>
+                    <div class="footer-icon">
+                        <a href="https://1-inspiration.com/" target="_blank"><i class="fa fa-globe"></i></a>
+                        <a target="_blank" href="mailto:whatisyour1percent@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/1percentinspiration.mp3/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/1percentinspiration"><i
+                                class="fa fa-facebook-official"></i></a>
+                        <a target="_blank" href="https://open.spotify.com/show/1AeeaLLF69SL3zSaGS0pnj"><i
+                                class="fa fa-spotify"></i></a>
+                    </div>
                 </footer>
             </div>
             <div class="col"></div>
@@ -466,9 +500,7 @@
     </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -486,7 +518,20 @@
         } else {
             x.className = "topnav";
         }
-    }
+    } var btn = $('#top-button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 </script>
 
 </html>

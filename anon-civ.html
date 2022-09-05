@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +50,7 @@
         padding-right: 8px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav a:not(:first-child) {
             display: none;
         }
@@ -69,7 +70,7 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav.responsive {
             position: relative;
         }
@@ -172,7 +173,7 @@
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .column {
             -ms-flex: 100%;
             flex: 100%;
@@ -182,14 +183,15 @@
         footer {
             padding-top: 36%;
         }
+
         .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-        object-fit: cover;
-        height: 300px;
-        transition: 0.5s;
-    }
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+            transition: 0.5s;
+        }
     }
 
     .album-icon {
@@ -227,16 +229,7 @@
         text-transform: uppercase;
     }
 
-
-    .btn-submit-letter {
-        background: #2E0740;
-        padding: 16px;
-        text-align: center;
-        border-radius: 8px;
-        color: white;
-    }
-
-    .pad-top{
+    .pad-top {
         padding-top: 48px;
     }
 </style>
@@ -292,7 +285,8 @@
             </a>
         </div>
     </header>
-    <div class="container-fluid">
+       <div class="container-fluid">
+        <a id="top-button"></a>
         <div class="row">
             <div class="col"></div>
             <div class="col-md-10">
@@ -302,11 +296,24 @@
                         <h2 class="transform-upper">Closet of Dreams
                         </h2>
                         <h5><strong><small class="text-muted"><em>
-                            Anonymous, CivE 2T2
+                                        Anonymous, CivE 2T2
                                     </em></small></strong></h5>
                         <br>
                         <p>Dear 2T2 Freshman,</p>
-                        <p>Think of the dreams that brought you here today, at the brink of what most will call a new chapter in your life. Think of the dreams you may have ignored and the dreams you still hold on to. Now imagine those dreams in a wardrobe of thoughts that you get to wear, full outfits you can pick and choose to take you through everyday. You wouldn’t forget your clothes when you leave your home, as such, don’t forget your dreams. Like real clothes, you may have a favorite fit, a style you keep coming back to. You may have choices for when you’re feeling bolder, trying out something new. Dress how you wish to appear in this world, finding the people who share your same sense of style. Take on the day with your dreams on your sleeves, as a favorite hat or an unremoved necklace. Layer them in the changing weather as you welcome in the seasons of you. Wear them till they’re worn out in need of repair or replacement, or simply let your style evolve. Wear them as you take on new experiences, cherish memories big and small; showing up as your authentic self so you can live without regret. With everyday, let the reminder of who you wish to be be a catalyst to uncover who you truly are. Your true purpose is waiting for you in your growing closet of dreams.
+                        <p>Think of the dreams that brought you here today, at the brink of what most will call a new
+                            chapter in your life. Think of the dreams you may have ignored and the dreams you still hold
+                            on to. Now imagine those dreams in a wardrobe of thoughts that you get to wear, full outfits
+                            you can pick and choose to take you through everyday. You wouldn’t forget your clothes when
+                            you leave your home, as such, don’t forget your dreams. Like real clothes, you may have a
+                            favorite fit, a style you keep coming back to. You may have choices for when you’re feeling
+                            bolder, trying out something new. Dress how you wish to appear in this world, finding the
+                            people who share your same sense of style. Take on the day with your dreams on your sleeves,
+                            as a favorite hat or an unremoved necklace. Layer them in the changing weather as you
+                            welcome in the seasons of you. Wear them till they’re worn out in need of repair or
+                            replacement, or simply let your style evolve. Wear them as you take on new experiences,
+                            cherish memories big and small; showing up as your authentic self so you can live without
+                            regret. With everyday, let the reminder of who you wish to be be a catalyst to uncover who
+                            you truly are. Your true purpose is waiting for you in your growing closet of dreams.
                         <p>
                             Warm regards,
                         </p>
@@ -326,7 +333,8 @@
                 <div class="row-read-more letter-prev-photos">
                     <div class="column-3">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="ali.html"><img class="letter-img" src="./letter_photos/Ali_Seifeldin.png"
+                            <a class="letter-link" href="ali.html"><img class="letter-img"
+                                    src="./letter_photos/Ali_Seifeldin.png"
                                     alt="Photo of Ali painted in purple during Frosh Week"></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Dear Froshies</h5>
@@ -334,8 +342,8 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="jennifer.html"><img
-                                    src="./letter_photos/Jennifer_Wang.png" alt=""></a>
+                            <a class="letter-link" href="jennifer.html"><img src="./letter_photos/Jennifer_Wang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">For the next time the world turns grey on you</h5>
                                 <p class="letter-author"><em>Jennifer Wang, ChemE 2T1 + PEY</em></p>
@@ -349,14 +357,16 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="sabrina.html"><img src="./letter_photos/Sabrina_Cupryk.png" alt=""></a>
+                            <a class="letter-link" href="sabrina.html"><img src="./letter_photos/Sabrina_Cupryk.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Being Okay is Pretty Great</h5>
                                 <p class="letter-author"><em>Sabrina, ChemE 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-civ.html"><img src="./letter_photos/Anonymous_CivE.png" alt=""></a>
+                            <a class="letter-link" href="anon-civ.html"><img src="./letter_photos/Anonymous_CivE.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Closet of Dreams</h5>
                                 <p class="letter-author"><em>Anonymous</em></p>
@@ -365,14 +375,16 @@
                     </div>
                     <div class="column-3">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="hanna.html"><img src="./letter_photos/Hanna_Zhang.png" alt=""></a>
+                            <a class="letter-link" href="hanna.html"><img src="./letter_photos/Hanna_Zhang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Relentless Pursuit</h5>
                                 <p class="letter-author"><em>Hanna J. Zhang, EngSci ROBO 2T0 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="david.html"><img src="./letter_photos/David_Boroto.png" alt=""></a>
+                            <a class="letter-link" href="david.html"><img src="./letter_photos/David_Boroto.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Good luck and take care. You're about to start an adventure!
                                 </h5>
@@ -380,7 +392,8 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="matthew.html"><img src="./letter_photos/Matthew_Van_Oirschot.png" alt=""></a>
+                            <a class="letter-link" href="matthew.html"><img
+                                    src="./letter_photos/Matthew_Van_Oirschot.png" alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Enjoy the Ride</h5>
                                 <p class="letter-author"><em>Matthew Van Oirschot, EngSci 2T1 + PEY</em></p>
@@ -388,15 +401,16 @@
                         </div>
 
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-indy1.html"><img src="./letter_photos/The Journey or the Destination.png"
-                                    alt=""></a>
+                            <a class="letter-link" href="anon-indy1.html"><img
+                                    src="./letter_photos/The Journey or the Destination.png" alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">The Journey or the Destination?</h5>
                                 <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="yilin.html"><img src="./letter_photos/Yilin_Huang.png" alt=""></a>
+                            <a class="letter-link" href="yilin.html"><img src="./letter_photos/Yilin_Huang.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">To the class of 2T6</h5>
                                 <p class="letter-author"><em>Yilin Huang, MSE 2T0 + PEY</em></p>
@@ -405,7 +419,8 @@
                     </div>
                     <div class="column-3">
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="cecilia.html"><img src="./letter_photos/Cece_Rozario.png" alt=""></a>
+                            <a class="letter-link" href="cecilia.html"><img src="./letter_photos/Cece_Rozario.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Advice From Your Friendly Coffee Addict</h5>
                                 <p class="letter-author"><em>Cece, Indy 2T1+1 + PEY</em></p>
@@ -426,14 +441,16 @@
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="anon-indy2.html"><img src="./letter_photos/Anonymous_Indy.png" alt=""></a>
+                            <a class="letter-link" href="anon-indy2.html"><img src="./letter_photos/Anonymous_Indy.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">Feeling A Lot: Engineers Have Big Hearts</h5>
                                 <p class="letter-author"><em>Anonymous, Indy 2T1 + PEY</em></p>
                             </div>
                         </div>
                         <div id="container-letter-photo">
-                            <a class="letter-link" href="akhirun.html"><img src="./letter_photos/Akhirun Nahar Meem.png" alt=""></a>
+                            <a class="letter-link" href="akhirun.html"><img src="./letter_photos/Akhirun Nahar Meem.png"
+                                    alt=""></a>
                             <div class="letter-prev-text">
                                 <h5 class="letter-title">I know you might be scared, but it's all good!</h5>
                                 <p class="letter-author"><em>Akhirun Nahar Meem, ChemE 2T5 + PEY</em></p>
@@ -442,13 +459,24 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://1-inspiration.com/episodes/dear-frosh"
-                            target="_blank"><p class="btn-submit-letter">Submit a Letter!</p></a>
+                    <a href="https://1-inspiration.com/episodes/dear-frosh" target="_blank">
+                        <p class="btn-submit-letter">Submit a Letter!</p>
+                    </a>
                 </div>
                 <footer>
                     <hr>
                     <p>Made with 💜 by Jennifer & Maeesha from <a target="_blank" href="https://1-inspiration.com/">1%
                             Inspiration</a></p>
+                    <div class="footer-icon">
+                        <a href="https://1-inspiration.com/" target="_blank"><i class="fa fa-globe"></i></a>
+                        <a target="_blank" href="mailto:whatisyour1percent@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/1percentinspiration.mp3/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/1percentinspiration"><i
+                                class="fa fa-facebook-official"></i></a>
+                        <a target="_blank" href="https://open.spotify.com/show/1AeeaLLF69SL3zSaGS0pnj"><i
+                                class="fa fa-spotify"></i></a>
+                    </div>
                 </footer>
             </div>
             <div class="col"></div>
@@ -457,9 +485,7 @@
     </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -477,7 +503,20 @@
         } else {
             x.className = "topnav";
         }
-    }
+    } var btn = $('#top-button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 </script>
 
 </html>

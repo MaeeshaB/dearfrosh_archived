@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +50,7 @@
         padding-right: 8px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav a:not(:first-child) {
             display: none;
         }
@@ -69,7 +70,7 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .topnav.responsive {
             position: relative;
         }
@@ -172,7 +173,7 @@
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 777px) {
         .column {
             -ms-flex: 100%;
             flex: 100%;
@@ -226,15 +227,6 @@
 
     .transform-upper {
         text-transform: uppercase;
-    }
-
-
-    .btn-submit-letter {
-        background: #2E0740;
-        padding: 16px;
-        text-align: center;
-        border-radius: 8px;
-        color: white;
     }
 
     .pad-top {
@@ -293,7 +285,8 @@
             </a>
         </div>
     </header>
-    <div class="container-fluid">
+       <div class="container-fluid">
+        <a id="top-button"></a>
         <div class="row">
             <div class="col"></div>
             <div class="col-md-10">
@@ -307,29 +300,107 @@
                                     </em></small></strong></h5>
                         <br>
                         <p>Dear Future Engineer,</p>
-                        <p>Hey there, welcome to UofT Engineering! I’m Cece an Indy 2T1+1+ Pey. Really weird experience, I was in indy then went to ECE for second year then came back to indy…will say I have absolutely no regrets and would do it all over again. I’ll be graduating this year and thought it would be great to share some parts of my memories here.
+                        <p>Hey there, welcome to UofT Engineering! I’m Cece an Indy 2T1+1+ Pey. Really weird experience,
+                            I was in indy then went to ECE for second year then came back to indy…will say I have
+                            absolutely no regrets and would do it all over again. I’ll be graduating this year and
+                            thought it would be great to share some parts of my memories here.
                             <br><br>
-                            Looking back, first year was such a long time ago! I had no idea that the years would just fly right by me. Here I met friends that stayed by my side and changed the course of my life for the better. People that showed me new experiences from cafes, graffiti art, 10 course tasting menus, wine tastings, the Toronto startup community, skydiving and that’s just the start of the list! 
+                            Looking back, first year was such a long time ago! I had no idea that the years would just
+                            fly right by me. Here I met friends that stayed by my side and changed the course of my life
+                            for the better. People that showed me new experiences from cafes, graffiti art, 10 course
+                            tasting menus, wine tastings, the Toronto startup community, skydiving and that’s just the
+                            start of the list!
                             <br><br>
-                            Initially, I really didn’t know what I signed up for. To be fair I flipped a coin right before the OUAC website crashed. It was either engineering or actuarial science and well that’s how I ended up here. One question that everyone will ask you (and I guarantee you this) is “Where do you want to be?” Honestly, it’s a really hard question to answer when you haven’t explored the world. It’s crazy to think that you would have your life set out by the age of 17. In grade 12 I would spend my days sitting by the harbourfront listening to emo music and sipping bubble tea. Yeah I had that phase. 
+                            Initially, I really didn’t know what I signed up for. To be fair I flipped a coin right
+                            before the OUAC website crashed. It was either engineering or actuarial science and well
+                            that’s how I ended up here. One question that everyone will ask you (and I guarantee you
+                            this) is “Where do you want to be?” Honestly, it’s a really hard question to answer when you
+                            haven’t explored the world. It’s crazy to think that you would have your life set out by the
+                            age of 17. In grade 12 I would spend my days sitting by the harbourfront listening to emo
+                            music and sipping bubble tea. Yeah I had that phase.
                             <br><br>
-                            I was just so lost when I came into first year. I didn’t know what I wanted or what’s even out there. I felt out of place, everyone here was smart and high achieving. Some people seemed to have it all figured out, doing crazy stuff in highschool and I was just here going with the flow. I actually felt bad for being in indy. I didn’t have a great sense of the careers I could take on and if they would be any good for me. To be honest, ever since I was 7 I wanted to walk on to Bay Street in a suit, because I saw a woman do that. Really that was all the aim I had. I will say though, I have been doing that on my PEY :)
+                            I was just so lost when I came into first year. I didn’t know what I wanted or what’s even
+                            out there. I felt out of place, everyone here was smart and high achieving. Some people
+                            seemed to have it all figured out, doing crazy stuff in highschool and I was just here going
+                            with the flow. I actually felt bad for being in indy. I didn’t have a great sense of the
+                            careers I could take on and if they would be any good for me. To be honest, ever since I was
+                            7 I wanted to walk on to Bay Street in a suit, because I saw a woman do that. Really that
+                            was all the aim I had. I will say though, I have been doing that on my PEY :)
                             <br><br>
-                            This is why I had the weird switch between the programs. As a first year I wish I was more comfortable with the idea of not knowing where I’d end up and just continued learning as much as I can outside of the class. Here is the first piece of advice I can offer you. Your engineering program doesn’t explicitly define which careers you end up in, it’s how you use those skills you learn and where you apply them. You might find yourself stuck between two programs. I’d say go with your guts and build up a solid resume with things outside of school. 
+                            This is why I had the weird switch between the programs. As a first year I wish I was more
+                            comfortable with the idea of not knowing where I’d end up and just continued learning as
+                            much as I can outside of the class. Here is the first piece of advice I can offer you. Your
+                            engineering program doesn’t explicitly define which careers you end up in, it’s how you use
+                            those skills you learn and where you apply them. You might find yourself stuck between two
+                            programs. I’d say go with your guts and build up a solid resume with things outside of
+                            school.
                             <br><br>
-                            You might also be trying to figure out what you like and who you’d like to be. Getting involved in outside extracurriculars is a great way to start. Even if you don’t know your interests, that is ok. Show up to that club you know nothing about! The only way to find out where you want to go, is to actually try as much as possible. Uni is like a chance for you to carve out who you want to be and aim at it. I’m actually surprised by how things work out if you are persistent. I almost dropped out of engineering because A LOT of my life was falling apart. 
+                            You might also be trying to figure out what you like and who you’d like to be. Getting
+                            involved in outside extracurriculars is a great way to start. Even if you don’t know your
+                            interests, that is ok. Show up to that club you know nothing about! The only way to find out
+                            where you want to go, is to actually try as much as possible. Uni is like a chance for you
+                            to carve out who you want to be and aim at it. I’m actually surprised by how things work out
+                            if you are persistent. I almost dropped out of engineering because A LOT of my life was
+                            falling apart.
                             <br><br>
-                            It was a pretty anxious time and family obligations were overwhelming me. Sometimes, it did feel like this place wasn’t for me. Actually my 2nd year of indy was the tipping point, when I got sick during exam season and had to defer 2 courses to the winter semester. During my winter semester I managed 8 courses, and clubs to stack my resume. Oftentimes I worked past midnight pulling late nights to manage everything. It was a lot to take on. The fall of second year indy put me on probation and if I didn’t get my act together in the winter, I would have to leave school for a year. It really felt like I was being pushed to an edge but some of the people in my life carried me through that time and that includes faculty. 
+                            It was a pretty anxious time and family obligations were overwhelming me. Sometimes, it did
+                            feel like this place wasn’t for me. Actually my 2nd year of indy was the tipping point, when
+                            I got sick during exam season and had to defer 2 courses to the winter semester. During my
+                            winter semester I managed 8 courses, and clubs to stack my resume. Oftentimes I worked past
+                            midnight pulling late nights to manage everything. It was a lot to take on. The fall of
+                            second year indy put me on probation and if I didn’t get my act together in the winter, I
+                            would have to leave school for a year. It really felt like I was being pushed to an edge but
+                            some of the people in my life carried me through that time and that includes faculty.
                             <br><br>
-I even went as far planning out and asking my academic advisor about transferring out after 2nd year Indy. I didn’t actually know if I’d land a PEY position but I sat in shock when I got a call back saying I got the job I wanted. Well sort of….I was looking to be a quantitative trader but was offered an AI engineering position at the bank. Even during that call I didn’t know if I was a good fit. I didn’t realize it back then but, this is where I learned to make pivots and take new opportunities. More importantly, be comfortable being uncomfortable. It’s an important skill because it helps open new paths, take on more challenging work and build your skill sets faster. My PEY wasn’t what I expected at the start but I couldn’t have asked for anything better. Most of the opportunities I got was because I put my hand up and was willing to do things I had zero experience in. During my PEY I built AI models, did human centred design, product management, execution strategy, quantitative trading and even learned a lot about crypto! 
-<br><br>
-What I really want you to get out of this is that, whatever comes your way, work hard and be very good at what you are given. If things start to go south, remember what you’d like to do and do everything possible to make small steps in that direction. On nights like that, I really like to look at the moon at Harbourfront. Why? Because the moon lets the clouds pass by and still looks beautiful. So do that with your thoughts during tough times too. Be persistent and opportunities open up. 
-<br><br>
-Speaking of opportunities, I genuinely believe you’re boundless here…haha you’ll get that reference soon. However, new opportunities meant pushing my limits and trying new things but this time I don’t mean academics or work. PEY actually gave me the chance to focus more on my personal life and self-reflect. I don’t think this is emphasised enough but you go to university to learn how to think and challenge what you know so far, not just in the classroom but outside. This includes your values, world views, global events and having a desire to learn how the world works. Tend to that sense of curiosity because it changes what you value and what value you want to add in your future. I found that reading philosophy, painting, art and poetry helped me reflect on myself. Engineering is lucrative and oftentimes school will be a top priority in your mind, but you’re a person first. A person that can experience emotions, dream, be curious and express themselves. For example, I like strange things. I went skydiving and I love a fancy restaurant where the view is on the 54th floor of a random building. Then, I like to look straight down at tiny people. I ABSOLUTELY LOVE to order dessert first at a restaurant then get my meals backwards and finish with a nice appetizer just to see how the staff react. Would argue that it tastes better. So figure out what you like and remember to actually experience things during your undergrad. 
-<br><br>
-Lastly, I spent a lot more time with people during my PEY and explored lots of places in the city. It was eye opening to see how those relationships make a difference after a long day working as hard as I can. I learned to appreciate people a lot more, especially because my friends have moved away after university and I miss them. Way back in first year I didn’t realize that someone who would end up being so important to me would be gone after all the memories and I didn’t know what that would feel like. So make sure to step back once in a while to enjoy life, even better if you spend it with others. Appreciating people takes time, effort and patiences but it gave me a lot more memories to look back on. You’d be surprised by the people you meet along the way if you keep your mind open. It’s actually more exciting if things change course and you figure your way out.
-<br><br>
-Hope this helps! Remember to live, laugh and love your time here.
+                            I even went as far planning out and asking my academic advisor about transferring out after
+                            2nd year Indy. I didn’t actually know if I’d land a PEY position but I sat in shock when I
+                            got a call back saying I got the job I wanted. Well sort of….I was looking to be a
+                            quantitative trader but was offered an AI engineering position at the bank. Even during that
+                            call I didn’t know if I was a good fit. I didn’t realize it back then but, this is where I
+                            learned to make pivots and take new opportunities. More importantly, be comfortable being
+                            uncomfortable. It’s an important skill because it helps open new paths, take on more
+                            challenging work and build your skill sets faster. My PEY wasn’t what I expected at the
+                            start but I couldn’t have asked for anything better. Most of the opportunities I got was
+                            because I put my hand up and was willing to do things I had zero experience in. During my
+                            PEY I built AI models, did human centred design, product management, execution strategy,
+                            quantitative trading and even learned a lot about crypto!
+                            <br><br>
+                            What I really want you to get out of this is that, whatever comes your way, work hard and be
+                            very good at what you are given. If things start to go south, remember what you’d like to do
+                            and do everything possible to make small steps in that direction. On nights like that, I
+                            really like to look at the moon at Harbourfront. Why? Because the moon lets the clouds pass
+                            by and still looks beautiful. So do that with your thoughts during tough times too. Be
+                            persistent and opportunities open up.
+                            <br><br>
+                            Speaking of opportunities, I genuinely believe you’re boundless here…haha you’ll get that
+                            reference soon. However, new opportunities meant pushing my limits and trying new things but
+                            this time I don’t mean academics or work. PEY actually gave me the chance to focus more on
+                            my personal life and self-reflect. I don’t think this is emphasised enough but you go to
+                            university to learn how to think and challenge what you know so far, not just in the
+                            classroom but outside. This includes your values, world views, global events and having a
+                            desire to learn how the world works. Tend to that sense of curiosity because it changes what
+                            you value and what value you want to add in your future. I found that reading philosophy,
+                            painting, art and poetry helped me reflect on myself. Engineering is lucrative and
+                            oftentimes school will be a top priority in your mind, but you’re a person first. A person
+                            that can experience emotions, dream, be curious and express themselves. For example, I like
+                            strange things. I went skydiving and I love a fancy restaurant where the view is on the 54th
+                            floor of a random building. Then, I like to look straight down at tiny people. I ABSOLUTELY
+                            LOVE to order dessert first at a restaurant then get my meals backwards and finish with a
+                            nice appetizer just to see how the staff react. Would argue that it tastes better. So figure
+                            out what you like and remember to actually experience things during your undergrad.
+                            <br><br>
+                            Lastly, I spent a lot more time with people during my PEY and explored lots of places in the
+                            city. It was eye opening to see how those relationships make a difference after a long day
+                            working as hard as I can. I learned to appreciate people a lot more, especially because my
+                            friends have moved away after university and I miss them. Way back in first year I didn’t
+                            realize that someone who would end up being so important to me would be gone after all the
+                            memories and I didn’t know what that would feel like. So make sure to step back once in a
+                            while to enjoy life, even better if you spend it with others. Appreciating people takes
+                            time, effort and patiences but it gave me a lot more memories to look back on. You’d be
+                            surprised by the people you meet along the way if you keep your mind open. It’s actually
+                            more exciting if things change course and you figure your way out.
+                            <br><br>
+                            Hope this helps! Remember to live, laugh and love your time here.
                         <p>
                             Cheers,
                         </p>
@@ -337,7 +408,7 @@ Hope this helps! Remember to live, laugh and love your time here.
                         <p>Cece <br>
                             Indy 2T1+1 + PEY<br>
                             Instagram: cece_rozario
-                            
+
                         </p>
                     </div>
                     <div class="column letter-image">
@@ -485,6 +556,16 @@ Hope this helps! Remember to live, laugh and love your time here.
                     <hr>
                     <p>Made with 💜 by Jennifer & Maeesha from <a target="_blank" href="https://1-inspiration.com/">1%
                             Inspiration</a></p>
+                    <div class="footer-icon">
+                        <a href="https://1-inspiration.com/" target="_blank"><i class="fa fa-globe"></i></a>
+                        <a target="_blank" href="mailto:whatisyour1percent@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/1percentinspiration.mp3/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/1percentinspiration"><i
+                                class="fa fa-facebook-official"></i></a>
+                        <a target="_blank" href="https://open.spotify.com/show/1AeeaLLF69SL3zSaGS0pnj"><i
+                                class="fa fa-spotify"></i></a>
+                    </div>
                 </footer>
             </div>
             <div class="col"></div>
@@ -493,9 +574,7 @@ Hope this helps! Remember to live, laugh and love your time here.
     </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -513,7 +592,20 @@ Hope this helps! Remember to live, laugh and love your time here.
         } else {
             x.className = "topnav";
         }
-    }
+    } var btn = $('#top-button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 </script>
 
 </html>
