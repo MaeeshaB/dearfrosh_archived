@@ -1,0 +1,13 @@
+.btn-copy-link i{
+    padding-right: 8px;
+}
+
+#custom-tooltip {
+    display: none;
+    margin-left: 10px;
+    padding: 8px 8px;
+    background-color: #000000df;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+}
