@@ -1,0 +1,98 @@
+
+.gallery-header{
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  
+  .gallery-header img{
+    width: 90px;
+    margin-right: 15px;
+  }
+  
+  .row-gallery {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 8px;
+    justify-content: space-between;
+  }
+  
+  /* Create 2 equal columns that sits next to each other */
+  .column-gallery {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 8px;
+  }
+  
+  .column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  @media screen and (min-width: 425px) {
+    .column-gallery img:hover {
+      -webkit-filter: brightness(70%);
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .column-gallery img {
+      margin-top: 0px;
+      border-radius: 0px;
+      vertical-align: middle;
+      width: 100%;
+      transition: 0.5s;
+    }
+    .row-gallery {
+      padding: 0px;
+    }
+    .column-gallery {
+      -ms-flex: 33%;
+      flex: 33%;
+      max-width: 33%;
+      padding: 0px;
+    }
+    .container-gallery{
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column-gallery {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column-gallery {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .column-gallery {
+        -ms-flex: 33%; /* IE10 */
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 8px;
+      }
+  }
